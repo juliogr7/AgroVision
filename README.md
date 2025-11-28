@@ -11,5 +11,7 @@ En base a este, se escogieron únicamente las 4 clases de hojas de maíz (las cl
 Se evaluaron 5 modelos en total: 
 - DNN: GELU, regularización L2, Dropout, Softmax, AdamW, ReduceLROnPlateau, EarlyStopping
 - CNN: ReLU, BatchNorm, Dropout, Softmax, AdamW, Sparse Categorical Crossentropy, ReduceLROnPlateau, EarlyStopping
-- Transfer Learning: ResNet50 y EfficientNetB0 (Preentrenadas en el dataset ImageNet)
-- Denoising CNN Autoencoder
+- Transfer Learning ResNet50: preentrenada en el dataset ImageNet, congelando las 30 capas iniciales al hacer fine-tuning, Softmax al final, ReduceLROnPlateau, EarlyStopping
+- Denoising CNN Autoencoder: Encoder-decoder convolucional (U-Net con skip connections).
+
+Enlace del video: https://www.youtube.com/watch?v=3LpzV7DKfho
